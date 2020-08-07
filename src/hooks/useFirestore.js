@@ -4,7 +4,9 @@ import { projectFirestore } from '../firebase/config';
 const useFirestore = (collection) => {
   const [docs, setDocs] = useState([]);
 
-  // we track the change in the collection with pictures: adding new ones or deleting them - and with this in mind, render information on the screen
+  // we track the change in the collection with pictures: 
+  // adding new ones or deleting them - and with this in mind,
+  // render information on the screen
   useEffect(() => {
     const unsub = projectFirestore.collection(collection)
       .orderBy('createdAt', 'desc')

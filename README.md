@@ -1,6 +1,6 @@
 # Simple social app "Your screenshots"
 
-React application for displaying screenshots and photos.
+.React application for displaying screenshots and photos
 Uses custom hooks and functional components.
 
 **Tasks:**
